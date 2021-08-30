@@ -95,7 +95,7 @@ class SiteController extends Controller
 				{
 					if ($dx<=$arr[$key-1]['Deadline'])
 						$dx=date("Y-m-d",strtotime($arr[$key-1]['Deadline']."+1 day"));
-					if ($dx>$arr[$key]['Deadline'])
+					if ($dx>=$arr[$key]['Deadline'])
 					{
 						$dx=$end[$key-1];
 						$end[$key-1]=date("Y-m-d",strtotime($end[$key-1]."-1 day"));
