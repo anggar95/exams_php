@@ -161,22 +161,7 @@ class SiteController extends Controller
 					],
 			    ],
 			]);
-			
-			//var_dump($arr[1]['Name']);
 		}
-		
-		//$request = \Yii::$app-request;
-		//$id = $request->get('id',1);  //id默认为1
-		//$username = $request->post('username',''); //username默认为0
-		//$request->isPost;
-		//$sql = "select * from exam order by deadline";
-		
-
-
-		
-		
-		//var_dump($r[1]['id']);
-		//die;
 		return $this->render('index', [
 		            'result' => $result,
 		        ]);
